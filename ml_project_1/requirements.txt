@@ -1,0 +1,9 @@
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+jupyter
+tensorflow  # or pytorch, depending on your model requirements
+requests  # if you are fetching data from APIs
+logging  # if you are using logging in your project
