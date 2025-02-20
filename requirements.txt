@@ -1,4 +1,9 @@
 numpy
 pandas
 flask
+mysql-connector-python
+pysql 
+python-sql
+sqlite3
+scikit-learn
 -e .

@@ -28,26 +28,17 @@ def get_requirements(file_path: str) -> List[str]:
     return requirements
 
 setup(
-    name='ml_project_1',  # Use underscores instead of spaces
+    name='ml_project_1',
     version='0.1.0',
-    author='Anas Asghar',
-    author_email='your@email.com',  # Add email
-    description='Machine Learning Project 1 Package',
-    long_description=open('README.md').read(),  # Add long description
-    long_description_content_type='text/markdown',
-    url='https://github.com/AnsAsghar/ML-Project-1',  # Add project URL
-    packages=find_packages(
-        where='src',  # Specify the source directory
-        include=['*'],  # Include all packages
-        exclude=[]  # Exclude non-package directories if needed
-    ),
-    package_dir={'': 'src'},  # Tell setuptools where to find packages
-    install_requires=get_requirements('requirements.txt'),
-    python_requires='>=3.7',  # Specify Python version requirements
-    classifiers=[
-        'Programming Language :: Python :: 3',
-        'License :: OSI Approved :: MIT License',
-        'Operating System :: OS Independent',
-    ],
-    keywords='machine-learning ml',  # Add relevant keywords
+    author='Your Name',
+    author_email='your.email@example.com',
+    packages=find_packages(),
+    install_requires=[
+        'numpy',
+        'pandas',
+        'flask',
+        'pymysql',
+        'python-dotenv',
+        'scikit-learn'
+    ]
 )
