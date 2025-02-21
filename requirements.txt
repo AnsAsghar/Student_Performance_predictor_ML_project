@@ -3,7 +3,11 @@ pandas
 flask
 mysql-connector-python
 pysql 
-python-sql
-sqlite3
+#python-sql
+#sqlite3
 scikit-learn
--e .
+#-e .
+seaborn
+catboost
+matplotlib
+xgboost

@@ -22,13 +22,13 @@ class DataIngestion:
         try:
             logging.info("Initiating data ingestion process")
             
-            # Create SQLAlchemy engine using connection parameters
-            engine = create_engine('mysql+pymysql://root:@localhost/college')
-            
-            # Read data from MySQL using SQLAlchemy
-            query = "SELECT * FROM students"
-            df = pd.read_sql(query, engine)
-            logging.info(f"Read {len(df)} rows from database")
+            # Use sample data instead of MySQL database
+            df = pd.DataFrame({
+                'feature1': range(100),
+                'feature2': range(100, 200),
+                'target': [i % 2 for i in range(100)]
+            })
+            logging.info(f"Created sample dataset with {len(df)} rows")
             
             # Create artifacts directory if it doesn't exist
             os.makedirs(os.path.dirname(self.ingestion_config.raw_data_path), exist_ok=True)
@@ -44,10 +44,6 @@ class DataIngestion:
             train_set.to_csv(self.ingestion_config.train_data_path, index=False)
             test_set.to_csv(self.ingestion_config.test_data_path, index=False)
             logging.info("Train-test split completed and saved")
-            
-            # Dispose the engine
-            engine.dispose()
-            logging.info("Database connection closed")
             
             return (
                 self.ingestion_config.train_data_path,
