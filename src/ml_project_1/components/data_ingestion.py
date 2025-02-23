@@ -1,7 +1,5 @@
 import os
 import pandas as pd
-from sqlalchemy import create_engine
-from src.ml_project_1.utils.database import get_db_connection
 from sklearn.model_selection import train_test_split
 from dataclasses import dataclass
 from src.ml_project_1.logger import logging
@@ -20,6 +18,7 @@ class DataIngestion:
 
     def initiate_data_ingestion(self):
         try:
+            df = pd.read_csv(os.path.join('notebook/data','raw.csv'))
             logging.info("Initiating data ingestion process")
             
             # Use sample data instead of MySQL database
@@ -53,4 +52,3 @@ class DataIngestion:
         except Exception as e:
             logging.error(f"Error in data ingestion: {str(e)}")
             raise CustomException(e, sys)
-        

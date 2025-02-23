@@ -18,18 +18,18 @@ db = 'college'
 def read_sql_data():
     logging.info("Reading from mysql database started")
     try:
-        mydb=pymysql.connect(
+        mydb = pymysql.connect(
             host=host,
             user=user,
             password=password,
             database=db
         )
-        logging.info("connection established",mydb)
-        df=pd.read_sql_query("SELECT * FROM test",mydb)
+        logging.info("connection established", mydb)
+        df = pd.read_sql_query("SELECT * FROM test", mydb)
         print(df.head())
         return df
-    except CustomException as e:
-        raise CustomException(e,sys)
+    except Exception as e:
+        raise CustomException(e, sys)
 
 def save_object(file_path, obj):
     try:
