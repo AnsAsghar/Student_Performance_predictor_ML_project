@@ -22,10 +22,11 @@ class DataIngestion:
             logging.info("Initiating data ingestion process")
             
             # Use sample data instead of MySQL database
+            # Use sample data with a linear relationship
             df = pd.DataFrame({
                 'feature1': range(100),
                 'feature2': range(100, 200),
-                'target': [i % 2 for i in range(100)]
+                'target': [2*i + j for i, j in zip(range(100), range(100, 200))]
             })
             logging.info(f"Created sample dataset with {len(df)} rows")
             
