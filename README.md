@@ -1,4 +1,4 @@
-### Student Performance Predictor using Machine Learning
+#### Student Performance Predictor using Machine Learning
 
 This is a Machine Learning project focused on student performance prediction. The project implements an end-to-end ML pipeline that starts with data ingestion from a MySQL database containing student information, transforms the data through preprocessing steps like standardization, and trains multiple regression models to predict student performance. The pipeline evaluates several models including Random Forest, XGBoost, and CatBoost, selecting the best performer based on R2 score. The project follows software engineering best practices with modular components, proper exception handling, logging, and MLflow integration for experiment tracking. The final output includes trained model artifacts, preprocessed data splits, and performance metrics that can be used for making predictions on new student data. The project structure is organized into clear components (data ingestion, transformation, model training) with proper separation of concerns, making it maintainable and scalable.
 
