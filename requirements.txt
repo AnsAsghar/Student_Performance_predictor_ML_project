@@ -11,3 +11,4 @@ seaborn
 catboost
 matplotlib
 xgboost
+mlflow
