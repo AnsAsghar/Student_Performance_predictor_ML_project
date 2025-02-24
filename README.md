@@ -49,10 +49,6 @@ To check the final score and best model
 ```
 python app.py
 ```
-To run the entire pipeline, execute:
-```
-python run_pipeline.py
-```
 This command triggers the complete workflow—from data ingestion to model training and artifact generation.
 
 ## Contributing
