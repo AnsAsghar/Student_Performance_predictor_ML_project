@@ -62,7 +62,7 @@ Contributions are welcome! Please follow these steps:
 
 ## Connect with Me
 LinkedIn: [Anas Asghar Linkedn](https://www.linkedin.com/in/anas-asghar-aa7575202/)
-YouTube: [My Youtube Channel](https://www.youtube.com/channel/UCejaga6msq18if3kap8m_ew)]  
-Instagram: [My instagram account](https://www.instagram.com/ansasghar)]
+YouTube: [My Youtube Channel](https://www.youtube.com/channel/UCejaga6msq18if3kap8m_ew) 
+Instagram: [My instagram account](https://www.instagram.com/ansasghar)
 
 Happy coding! 😊
