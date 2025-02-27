@@ -3,6 +3,9 @@
 ## Overview
 This project is an end-to-end machine learning pipeline designed to predict student performance. It starts with data ingestion from a MySQL database, followed by thorough preprocessing and standardization of features, and continues with training multiple regression models—Random Forest, XGBoost, and CatBoost—to select the best performer based on the R2 score. Built with production-ready software engineering practices, the project incorporates modular design, proper error handling, logging, and MLflow integration for experiment tracking.
 
+## Complete walk through Youtube video of prject
+[Watch now! ([https://www.linkedin.com/in/anas-asghar-aa7575202/](https://youtu.be/jyRqVgpRHc0))
+
 ## Working of Project (logical flow diagram)
 ![Sequence structure of Project](basic_flow_diagram.jpg)
 
